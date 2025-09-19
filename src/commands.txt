@@ -1,0 +1,17 @@
+git checkout -b home_work_25
+git status
+git add src/model/MoneyAcceptor.java
+git commit -m "Add MoneyAcceptor interface"
+git add src/model/CoinAcceptor.java
+git commit -m "Refactor CoinAcceptor to implement MoneyAcceptor"
+git add src/model/CardAcceptor.java
+git commit -m "Add CardAcceptor implementation (card payment simulation)"
+git add src/AppRunner.java
+git commit -m "Refactor AppRunner to use MoneyAcceptor and allow runtime selection"
+git add commands.txt
+git commit -m "Add commands.txt with list of used git commands"
+git push -u origin home_work_25
+git checkout master
+git pull origin master
+git merge home_work_25
+git push origin master
